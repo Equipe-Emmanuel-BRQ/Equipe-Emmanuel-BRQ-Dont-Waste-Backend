@@ -1,0 +1,14 @@
+.title-forgot-password{
+    align-self: center;
+    font-weight: lighter;
+}
+
+.ancor-options {
+    margin: 2rem 0;
+}
+
+/* Container Error */
+
+.validation-container {
+    justify-content: center;
+}

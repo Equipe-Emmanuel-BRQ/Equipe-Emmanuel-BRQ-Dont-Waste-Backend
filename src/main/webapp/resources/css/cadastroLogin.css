@@ -1,0 +1,10 @@
+.tip-icon {
+    width: 2rem;
+    margin: 1rem 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.ancor-options {
+    margin-top: 1rem;
+}

@@ -1,0 +1,256 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-image: url(../img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.main-form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-form-content {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 6rem) 2rem 6rem;
+    align-items: center;
+}
+
+.formfield-user-img {
+    width: 5rem;
+    height: 5rem;
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.formfield-home-img {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+
+.container .form-label-title {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+.form-container-name {
+    grid-column: 1 /3;
+    grid-row: 2 / 3;
+}
+
+.form-container-amount {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.form-container-date {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.form-container-sale {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.validation-container{
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+.btn-voltar {
+    align-self: center;
+    justify-self: end;
+    text-align: center;
+    line-height: 2rem;        
+}
+
+.btn-salvar {
+    align-self: center;
+    line-height: 2rem;    
+    text-align: center;
+    margin-left: 10%;
+}
+
+.form-input, .form-select {
+    height: 3rem;
+    border: none;
+    padding: 0 1rem;
+    border: 1px solid #5FBAA7;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.form-btn {
+    display: inline-block;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: #5FBAA7;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.validation-container {
+    grid-column: 1 / 8;
+    grid-row: 4 / 4;
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: .5rem 0;
+    font-weight: bold;
+}
+
+.validation-icon-error {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.validation-title-error {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.ancor-option {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 8;
+    grid-row: 5 / 6;
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 0) and (max-width: 765px) {
+
+    .main-form {
+        width: 90%;
+    }
+
+    .container {
+        padding: .8rem;
+    }
+
+    .main-form-content{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto) 1rem 6rem ;
+    }
+
+    .form-input, .form-select  {
+        width: 100%;
+        padding: 0;    
+    }
+    .formfield-user-img, .form-container-name, .form-container-amount, .form-container-date,
+    .form-container-sale {
+        grid-column: 1 /1;
+      
+    }
+
+    .formfield-user-img {
+        width: 3rem;
+        height: 3rem;
+        grid-row: 1 / 2;
+    }
+
+    .form-container-name {
+        grid-row: 2 / 3;
+    }
+    
+    .form-container-amount {
+        grid-row: 3 / 4;
+    }
+    
+    .form-container-date {
+        grid-row: 4 / 5;
+    }
+    
+    .form-container-sale {
+        grid-row: 5 / 6;
+    }
+
+    .ancor-option {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        grid-column: 1 / 1;
+        grid-row: 7 / 8;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    .validation-container{
+        grid-column: 1 / 1;
+        grid-row: 6 / 7;
+        margin: 0 ;
+    }
+    .btn-salvar, .btn-voltar {
+        width: 40%;
+    }
+}

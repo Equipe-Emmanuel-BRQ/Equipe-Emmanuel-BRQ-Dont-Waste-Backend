@@ -1,0 +1,136 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-image: url(../img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.section-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container-white {
+    height: 30rem;
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.section-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+.form-label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.user-icon {
+    height: 5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.home-icon {
+    height: 2rem;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.form-input {
+    height: 1.9rem;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid #5FBAA7;
+    outline: none;
+}
+
+.ancor-options {
+    text-transform: uppercase;
+    background-color: #5FBAA7;
+    border: none;
+    height: 3rem;
+    width: 8rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+
+/* Container Error */
+
+.validation-container {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: .5rem 0;
+    font-weight: bold;
+}
+
+.validation-icon-error {
+    width: 1rem;
+    height: 1rem;
+}
+
+.validation-title-error {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 0) and (max-width: 600px) {
+    .section-container-white {
+        width: 90%;
+        height: auto;
+    }
+    .form-input {
+        height: 2.2rem;
+    }
+    .form-label {
+        margin-top: .8rem;
+    }
+    .ancor-options {
+        margin: 1rem 0;
+    }
+}

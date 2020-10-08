@@ -1,0 +1,15 @@
+.forget-password {
+    text-decoration: none;
+    color: black;
+    padding: .8rem 0;
+    align-self: flex-end;
+}
+
+.forget-password:hover{
+    color: #5FBAA7;
+    text-decoration: underline;
+}
+
+.ancor-options{
+    margin-top: 2rem;
+}
