@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <html lang="pt-br">
 
 <head>
@@ -21,27 +21,35 @@ pageEncoding="UTF-8"%>
 
 <body>
     <section class="section-container">
-        <form class="section-container-white">
+        <form action="/validacaoLogin" class="section-container-white" method="POST">
             <a href="/"><img src="../../resources/img/home.svg" alt="volta para home" class="home-icon"></a>
 
             <div class="section-form-content">
-                <img src="../../resources/img/user.svg" alt="logo usuÃ¡rio" class="user-icon">
+                <img src="../../resources/img/user.svg" alt="logo usuÃ¡rio" class="user-icon"> <label for="email"
+                    class="form-label">E-mail:</label>
+                <input type="email" name="email" id="input-email" class="form-input">
 
-                <label for="email" class="form-label">E-mail:</label>
-                <input type="email" name="user-email" id="input-email" class="form-input">
-
-                <label for="password" class="form-label">Senha:</label>
-                <input type="password" name="user-password" id="input-password" class="form-input">
+                <label for="password" class="form-label">Senha:</label> <input type="password" name="password"
+                    id="input-password" class="form-input">
 
                 <div class="validation-container">
-                    <img src="../../resources/img/icon/warning.svg" class="validation-icon-error">
-                    <span class="validation-title-error">Email ou senha Invalidos</span>
+                    <img src="../../resources/img/icon/warning.svg" class="validation-icon-error"> <span
+                        class="validation-title-error">Email ou senha Invalidos</span>
                 </div>
 
-                <a href="/esqueciSenha" class="forget-password">Esqueci minha senha</a>
 
-                <a href="#" class="ancor-options ancor-login">Logar</a>
 
+                <a href="/esqueciSenha" class="forget-password">Esqueci minha
+                    senha</a> 
+                
+                <div class="validation-login">
+                    <img src="../../resources/img/icon/warning.svg" class="validation-icon-error">
+                    <span class="validation-title-error-login">${senhaIncorreta}</span>
+                </div>
+                
+                <input type="submit" class="ancor-options ancor-login" value="logar" />
+
+         
             </div>
         </form>
     </section>

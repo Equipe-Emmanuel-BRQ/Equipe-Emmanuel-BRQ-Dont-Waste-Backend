@@ -17,7 +17,7 @@ $(".ancor-login").click(function () {
         $("#input-email").removeClass("error");
         $("#input-password").removeClass("error");
         $(".validation-container").hide();
-        alert("Usuário logado!");
+        $(".ancor-login").submit();
 
     } else {
         $(".validation-container").show();
