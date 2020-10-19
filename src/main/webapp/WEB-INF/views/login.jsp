@@ -21,7 +21,7 @@
 
 <body>
     <section class="section-container">
-        <form action="/validacaoLogin" class="section-container-white" method="POST">
+        <form class="section-container-white" method="POST">
             <a href="/"><img src="../../resources/img/home.svg" alt="volta para home" class="home-icon"></a>
 
             <div class="section-form-content">

@@ -25,22 +25,16 @@ public class LoginController {
 	}
 	
 	@RequestMapping("/validacaoLogin")
-	public ModelAndView validacaoLogin(String email, String password) throws Exception {
+	public String validacaoLogin(String email, String password) throws Exception {
 		
 		List<LoginModel> login = new ArrayList<LoginModel>();
 		
-		String loginIncorreto = "";
-		
-		login = sistema.buscarLogin();
 		for (LoginModel loginModel : login) {
 			if(email.equals(loginModel.getEmail())&&password.equals(loginModel.getSenha())) {
-				ModelAndView modelAndView = new ModelAndView("index");
-				return modelAndView;
+				return "email, password";
 			}
 		}
 		
-		ModelAndView modelAndView = new ModelAndView("login");
-		modelAndView.addObject("senhaIncorreta","Email ou senha incorreto");
-		return modelAndView;
+		return "não foi";
 	}
 }
