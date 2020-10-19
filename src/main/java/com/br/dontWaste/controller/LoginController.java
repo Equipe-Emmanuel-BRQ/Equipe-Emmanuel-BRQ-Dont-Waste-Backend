@@ -24,17 +24,22 @@ public class LoginController {
 		return "esqueciSenha";
 	}
 	
-	@RequestMapping("/validacaoLogin")
-	public String validacaoLogin(String email, String password) throws Exception {
+	@RequestMapping("validacaoLogin")
+	@ResponseBody
+	public boolean validacaoLogin(String email, String password) throws Exception {
 		
-		List<LoginModel> login = new ArrayList<LoginModel>();
-		
+		List<LoginModel> login = sistema.buscarLogin();
+		System.out.println("false");
+
 		for (LoginModel loginModel : login) {
-			if(email.equals(loginModel.getEmail())&&password.equals(loginModel.getSenha())) {
-				return "email, password";
+			if(validacaoDeLogin(loginModel,email, password)) {
+				return true;
 			}
 		}
-		
-		return "não foi";
+		return false;
+	}
+	
+	private boolean validacaoDeLogin(LoginModel login, String email, String password) {
+		return  email.equals(login.getEmail()) && password.equals(login.getSenha());
 	}
 }

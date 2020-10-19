@@ -32,7 +32,7 @@
                 <label for="password" class="form-label">Senha:</label> <input type="password" name="password"
                     id="input-password" class="form-input">
 
-                <div class="validation-container">
+                <div class="validation-container container-fields">
                     <img src="../../resources/img/icon/warning.svg" class="validation-icon-error"> <span
                         class="validation-title-error">Email ou senha Invalidos</span>
                 </div>
@@ -42,9 +42,11 @@
                 <a href="/esqueciSenha" class="forget-password">Esqueci minha
                     senha</a> 
                 
-                <div class="validation-login">
-                    <img src="../../resources/img/icon/warning.svg" class="validation-icon-error">
-                    <span class="validation-title-error-login">${senhaIncorreta}</span>
+        
+                
+                <div class="validation-container container-login">
+                    <img src="../../resources/img/icon/warning.svg" class="validation-icon-error"> <span
+                        class="validation-title-error">Email ou senha incorretos!</span>
                 </div>
                 
                 <input type="submit" class="ancor-options ancor-login" value="logar" />

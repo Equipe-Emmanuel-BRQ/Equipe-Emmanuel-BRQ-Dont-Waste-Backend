@@ -5,6 +5,7 @@
 
 
 	function validaLogin(email, password) {
+		debugger;
 		$.ajax({
 			url: "validacaoLogin",
 			type: "GET",
@@ -12,9 +13,14 @@
 				email: email,
 				password: password
 			},
-			success: function (data) {
-				debugger;
-
+			success: function(data) {
+				if(data == true) {
+					$(".container-login").hide();
+					alert("Redirecionando pagina...")
+				}else {
+					$(".container-login").show();
+				}
+				
 
 			}
 		})
@@ -32,13 +38,12 @@
 			let inputPassword = $("#input-password").val();
 
 			if (validationField(inputEmail, regexEmail, inputPassword, regexPassword)) {
-				debugger;
 				$("#input-email").removeClass("error");
 				$("#input-password").removeClass("error");
-				$(".validation-container").hide();
+				$(".container-fields").hide();
 				validaLogin(inputEmail, inputPassword);
 			} else {
-				$(".validation-container").show();
+				$(".container-fields").show();
 				$("#input-email").addClass("error");
 				$("#input-password").addClass("error");
 			}
