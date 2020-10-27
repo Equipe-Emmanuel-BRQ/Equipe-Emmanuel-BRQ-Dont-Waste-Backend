@@ -25,6 +25,11 @@ public class HomeController {
 	public String login() {
 		return "login";
 	}
+	
+	@RequestMapping("/homeLogada")
+	public String homeLogada() {
+		return "homeLogada";
+	}
 
 	
 }
