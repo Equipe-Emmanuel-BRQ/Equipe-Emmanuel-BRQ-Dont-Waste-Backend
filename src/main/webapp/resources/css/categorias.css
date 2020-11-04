@@ -62,17 +62,17 @@ a {
 }
 
 .form-input-navbar{
-	width: 31rem;
+	width: 40vw;
 	height: 2.5rem;
 	border-radius: 1rem;
 	border: .1rem solid grey;
 	outline: none;
 	font-size: 1rem;
 	padding: 0 .5rem;
-	background-image: url(../img/lupa.jpeg);
+	background-image: url(../img/lupa.svg);
 	background-repeat: no-repeat;
 	background-size: 4.5%;
-	background-position: 97% center;
+    background-position: 97% center;
 }
 
 .section-home{
@@ -167,13 +167,43 @@ a {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 361px) and (max-width: 600px) {
+@media only screen and (min-width: 361px) and (max-width: 910px) {
 
 
+    .section-home-container{
+        width: 100%;
+    }
+    
+    .section-home-container-content{
+        flex-direction: row;
+    }
+
+    .form-input-navbar{
+        background: none;
+        text-align: center;
+    }
     .home-slogan{
         width: 80%;
         word-break: break-word;
         text-align: center;
+    }
+    
+    .titulo-categorias{
+        margin:1.5rem
+    }
+    
+    .categoria-card-titulo{
+        font-size: 1rem;
+    }
+
+    .card-img-geladeira{
+        height: 50%;
+        margin-top: .5rem;
+    }
+
+    .card-img-dispensa{
+        height: 48%;
+        margin-top: 0;
     }
 
     .btn-home{
@@ -190,14 +220,38 @@ a {
 
 @media only screen and (min-width: 320px) and (max-width: 360px) {
 
+    .menu-icon, .home-icon-logado {
+        height: 1.8rem;
+        margin: 0;
+    }
 
+    .form-input-navbar{
+        width: 55vw;
+        height: 5.5vh;
+        background: none;
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .section-home{
+        height: 80%;
+    }
+    
+    .section-home-container{
+        width: 100%;
+    }
     .logo-home{
-        width: 50%;
-        margin: 0 auto;
+        width: 40%;
     }
 
     .home-title{
         margin: 0;
+        font-size: 1.2rem;
+
+    }
+
+    .home-subtitle{
+        font-size: 1.1rem;
     }
 
     .home-slogan{
@@ -208,9 +262,32 @@ a {
         margin: 1.5rem 0;
     }
 
-    .btn-home{
-        width: 45%;
-        height: 3rem;
+    .titulo-categorias{
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    .categoria-card{
+        width: 40%;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .categoria-card-titulo{
+        font-size: 1rem;
+    }
+
+    .card-img-geladeira{
+        height: 50%;
+        margin-top: .5rem;
+    }
+
+    .card-img-dispensa{
+        height: 55%;
+        margin-top: 0;
+    }
+    .btn-categoria{
+        width: 40%;
+        height: 2.5rem;
         font-size: .9rem;
         line-height: 3rem;
     }
@@ -225,5 +302,7 @@ a {
         height: 30%;
     }
 
-    
+    .section-home-container-content{
+        flex-direction: column;
+    }
 }

@@ -62,14 +62,14 @@ a {
 }
 
 .form-input-navbar{
-	width: 31rem;
+	width: 40vw;
 	height: 2.5rem;
 	border-radius: 1rem;
 	border: .1rem solid grey;
 	outline: none;
 	font-size: 1rem;
 	padding: 0 .5rem;
-	background-image: url(../img/lupa.jpeg);
+	background-image: url(../img/lupa.svg);
 	background-repeat: no-repeat;
 	background-size: 4.5%;
 	background-position: 97% center;
@@ -114,7 +114,6 @@ a {
 .home-slogan{
     font-size: 45px;
     color: #5FBAA7;
-    margin: 1rem 0;
 }
 
 .section-home-container-links{
@@ -140,6 +139,11 @@ a {
 @media only screen and (min-width: 361px) and (max-width: 600px) {
 
 
+    .form-input-navbar{
+        background: none;
+        text-align: center;
+    }
+
     .home-slogan{
         width: 80%;
         word-break: break-word;
@@ -150,7 +154,7 @@ a {
         width: 40%;
         height: 3rem;
         font-size: .9rem;
-        line-height: 3rem;
+        /* line-height: 3rem; */
     }
 
     .section-home-container-links{
@@ -160,6 +164,19 @@ a {
 
 @media only screen and (min-width: 320px) and (max-width: 360px) {
 
+    .menu-icon, .home-icon-logado {
+        height: 1.8rem;
+        margin: 0;
+    }
+
+    .form-input-navbar{
+        width: 55vw;
+        height: 5.5vh;
+        background: none;
+        font-size: .9rem;
+        text-align: center;
+    }
+
 
     .logo-home{
         width: 50%;
@@ -168,11 +185,12 @@ a {
 
     .home-title{
         margin: 0;
+        font-size: 35px;
     }
 
     .home-slogan{
         width: 80%;
-        font-size:35px ;
+        font-size:30px ;
         word-break: break-word;
         text-align: center;
         margin: 1.5rem 0;
@@ -182,7 +200,7 @@ a {
         width: 45%;
         height: 3rem;
         font-size: .9rem;
-        line-height: 3rem;
+        /* line-height: 3rem; */
     }
 
     .section-home-container-links{
