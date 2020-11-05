@@ -17,7 +17,7 @@ pageEncoding="UTF-8"%>
 <header>
 	<nav class="navbar-home-logada">
 		<div class="navbar-home-logada-container">
-			<img class="home-icon-logado" alt="" src="../../resources/img/home.svg">
+			<a href="homeLogada"><img class="home-icon-logado" alt="" src="../../resources/img/home.svg"></a>
 			<form class="form-navbar" action="">
 				<input type="text" class="form-input-navbar" placeholder="O que você procura?">
 			</form>
