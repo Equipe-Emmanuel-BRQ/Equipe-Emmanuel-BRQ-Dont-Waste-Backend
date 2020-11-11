@@ -61,9 +61,8 @@
 }
 
 .logo-home {
-    width: 20%;
+    width: 15%;
     height: 15%;
-    object-fit: cover;
 }
 
 .section-home-container-titles {
@@ -88,7 +87,33 @@
     text-align: center;
     font-weight: lighter;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+.section-home-container-tipo-item {
+    box-sizing: border-box;
+    width: 50%;
+    height: 5.5rem;
+    padding: 1rem;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #d1cdcd;
+    background-color: #eeeae9;
+}
+
+.tipo-item-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+.tipo-item-img-geladeira {
+    width: 30%;
+    height: 4.5rem;
 }
 
 .section-home-container-categorias {
@@ -141,10 +166,26 @@
 }
 
 @media only screen and (min-width: 361px) and (max-width: 910px) {
+    html, body, .section-home {
+        height: auto;
+    }
+    body {
+        background-image: url(../img/FundoMobile.jpg);
+    }
+    body::before {
+        height: 0;
+    }
+    
     .section-home-container {
         width: 100%;
+        height: 100%;
+    }
+    .logo-home {
+        width:  20%;
+        height: 100%;
     }
     .section-home-container-content {
+        margin-top: 5%;
         flex-direction: row;
     }
     .home-slogan {
@@ -158,6 +199,12 @@
     .categoria-card-titulo {
         font-size: 1rem;
     }
+    .section-home-container-tipo-item {
+        width: 70%;
+    }
+    .tipo-item-title {
+        font-size: 1.5rem;
+    }
     .btn-home {
         width: 40%;
         height: 3rem;
@@ -170,28 +217,22 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 360px) {
-    
-    html,body, .section-home {
+    html, body, .section-home {
         height: auto;
     }
-
     body {
         background-image: url(../img/FundoMobile.jpg);
     }
-
     body::before {
         height: 0;
     }
-    
     .navbar-home-logada-container {
         background-color: inherit;
         height: initial;
     }
-
     .navbar-home-logada-container {
         height: 10%;
     }
-
     .menu-icon, .home-icon-logado {
         height: 1.8rem;
         margin: 0;
@@ -225,16 +266,21 @@
         text-align: center;
         margin: 1.5rem 0;
     }
-
     .titulo-categorias {
         margin-bottom: 1.5rem;
         font-size: 1rem;
     }
-
+    .section-home-container-tipo-item {
+        margin-left: 5%;
+        width: 90%;
+    }
     .section-home {
         margin: 3% auto;
     }
-
+    .tipo-item-title {
+        font-size: 1.2rem;
+        margin-left: 2%;
+    }
     .categoria-card {
         width: 45%;
         height: 7rem;
