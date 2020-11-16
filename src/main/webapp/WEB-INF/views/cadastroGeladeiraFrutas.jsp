@@ -54,70 +54,8 @@ pageEncoding="UTF-8"%>
                     <h3>FRUTAS, LEGUMES E VERDURAS</h3>
                 </div>
                 <div class="section-home-container-cadastro-content" id="section-home-container-cadastro-content">
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
-                    <div class="section-home-container-cadastro-interno">
-                        <label for="input-number">Mamão</label>
-                        <div class="div-input-interno">
-                            <button id="menos">-</button>
-                            <input readonly class="input-number" id="input-number" type="text">
-                            <button id="mais">+</button>
-                        </div>
-                    </div>
+                    
+
                     <span class="span-novo-item">
                         <input class="input-novo-item" type="text">
                         <div class="input-novo-item-btn">
@@ -125,7 +63,9 @@ pageEncoding="UTF-8"%>
                             <button><img class="img-button-icon" src="../../resources/img/check.svg" alt=""></button>
                         </div>
                     </span>
-                    <button class="button-novo-item">NOVO ITEM +</button>
+
+                    <button type="button" class="button-novo-item">NOVO ITEM +</button>
+
                 </div>
                 <div class="section-home-container-cadastro-button">
                     <a href="/homeLogada" class="button-voltar btn-cadastro">Voltar</a>

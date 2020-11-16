@@ -151,6 +151,7 @@
     overflow: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    
 }
 
 .section-home-container-cadastro-interno{
@@ -162,6 +163,7 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+    order: -1;
 }
 
 .div-input-interno{
@@ -178,20 +180,20 @@
     border: 0.5px solid black;
 }
 
-#menos, #mais{
+.menos, .mais{
     border: none;
     font-size: 1rem;
     background-color: inherit;
     font-weight: bold;
 }
 
-#menos{
+.menos{
     margin-left: 0.2rem;
     color: red;
     font-size: 1rem;
 }
 
-#mais{
+.mais{
     color: green;
 }
 
@@ -200,6 +202,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+    order: 0;
 }
 
 .img-button-icon{
@@ -209,6 +212,7 @@
 
 .input-novo-item-btn{
     width: 40%;
+    order: 1;
 }
 
 .span-novo-item button{

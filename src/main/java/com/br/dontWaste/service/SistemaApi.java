@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.http.client.fluent.Request;
 import org.springframework.stereotype.Service;
 
+import com.br.dontWaste.model.AlimentosModel;
 import com.br.dontWaste.model.LoginModel;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -24,6 +25,16 @@ public class SistemaApi {
 		List<LoginModel> listaLogin = Arrays.asList(mapper.readValue(returnCall, LoginModel[].class)); 
 		
 		return listaLogin;
+	}
+	
+	public List<AlimentosModel> buscarAlimentos() throws Exception{
+		String returnCall = Request.Get("http://localhost:3002/alimentos")
+				.execute()
+				.returnContent()
+				.asString();
+		List<AlimentosModel> listaAlimentos = Arrays.asList(mapper.readValue(returnCall, AlimentosModel[].class)); 
+		
+		return listaAlimentos;
 	}
 	
 }
