@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .navbar-home-logada-container {
@@ -41,7 +42,8 @@
 }
 
 .section-home {
-    width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +94,7 @@
 .section-home-container-tipo-item {
     box-sizing: border-box;
     width: 50%;
-    height: 5.5rem;
+    height: 6rem;
     padding: 1rem;
     margin: 2% auto;
     display: flex;
@@ -115,45 +117,127 @@
     height: 4.5rem;
 }
 
-.section-home-container-categorias {
+.section-home-container-cadastro{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2rem;
+    border-radius: 25px;
+    background-color: white;
 }
 
-.categoria-card {
-    width: 28%;
-    height: 8rem;
-    margin: 1% auto;
-    border-radius: 1rem;
+.section-home-container-cadastro-titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5FBAA7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.section-home-container-cadastro-content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    box-shadow: 0px 0px 5px 0px #000;
-    background-color: #fff;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    height:15rem;
+    overflow: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.card-img {
+.section-home-container-cadastro-interno{
     width: 50%;
-    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.categoria-card-titulo {
-    font-weight: lighter;
-    font-size: 1.2rem;
+.div-input-interno{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.input-number{
+    width: 3rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    border: 0.5px solid black;
+}
+
+#menos, #mais{
+    border: none;
+    font-size: 1rem;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+#menos{
+    margin-left: 0.2rem;
+    color: red;
+    font-size: 1rem;
+}
+
+#mais{
+    color: green;
+}
+
+.span-novo-item{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
     margin: 0;
 }
 
-.btn-categoria {
+.img-button-icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-novo-item-btn{
+    width: 40%;
+}
+
+.span-novo-item button{
+    background-color: inherit;
+    border: inherit;
+}
+
+.input-novo-item{
+    width: 7rem;
+}
+
+.button-novo-item{
+    margin-top: 1rem;
+}
+
+.section-home-container-cadastro-button{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+.btn-cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12rem;
-    height: 3.5rem;
+    width: 10rem;
+    height: 3rem;
     background-color: #5FBAA7;
     color: white;
     font-size: 1rem;
@@ -195,24 +279,18 @@
     .titulo-categorias {
         margin: 1.5rem
     }
-    .categoria-card-titulo {
-        font-size: 1rem;
-    }
+    
     .section-home-container-tipo-item {
         width: 70%;
     }
     .tipo-item-title {
         font-size: 1.5rem;
     }
-    .btn-home {
-        width: 40%;
-        height: 3rem;
-        font-size: .9rem;
-        line-height: 3rem;
+
+    .section-home-container-cadastro-button{
+        width: 100%;
     }
-    .section-home-container-links {
-        justify-content: space-around;
-    }
+    
 }
 
 @media only screen and (min-width: 0px) and (max-width: 360px) {
@@ -280,20 +358,7 @@
         font-size: 1.2rem;
         margin-left: 2%;
     }
-    .categoria-card {
-        width: 45%;
-        height: 7rem;
-        margin: 1%;
-    }
-    .btn-categoria {
-        width: 40%;
-        height: 2.5rem;
-        font-size: .9rem;
-        line-height: 3rem;
-    }
-    .section-home-container-links {
-        justify-content: space-around;
-    }
+
     .section-home-container-titles {
         text-align: center;
         width: 80%;
@@ -301,5 +366,9 @@
     }
     .section-home-container-content {
         flex-direction: column;
+    }
+
+    .section-home-container-cadastro-button{
+        width: 100%;
     }
 }

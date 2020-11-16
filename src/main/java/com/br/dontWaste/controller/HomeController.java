@@ -30,6 +30,8 @@ public class HomeController {
 	public String homeLogada() {
 		return "homeLogada";
 	}
+	
+	
 
 	
 }
