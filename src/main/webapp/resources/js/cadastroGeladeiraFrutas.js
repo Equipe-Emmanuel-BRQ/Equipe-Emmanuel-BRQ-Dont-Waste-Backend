@@ -44,3 +44,22 @@ $(".button-novo-item").click(function () {
     $(".span-novo-item").show();
 })
 
+$(".button-cadastra-item").click(function() {
+    alimentoToJson()
+    $("#form-cadastro-alimento").submit();   
+    
+})
+
+function alimentoToJson(){
+    let alimento = {}
+    alimento["id"] = 0;
+    alimento["idUsuario"] = 1;
+    alimento["nome"] = $(".input-novo-item").val();
+    alimento["quantidade"] = 0;
+    alimento["datacompra"] = "17112020";
+    alimento["tipoalimento"] = "fvl";
+    alimento["tipoitem"] = "Geladeira";
+
+    $("#enviarAlimento").val(JSON.stringify(alimento))
+    console.log($("#enviarAlimento").val());
+}
