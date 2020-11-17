@@ -25,26 +25,22 @@ pageEncoding="UTF-8"%>
         </nav>
     </header>
 
-    
     <section class="section-home">
         <div class="section-home-container">
 
             <div class="section-home-container-content">
                 <img src="../../resources/img/LogoPng.png" class="logo-home">
-
                 <div class="section-home-container-titles">
                     <h1 class="home-title">Don't Waste</h1>
                     <h3 class="home-subtitle">Organize</h3>
                 </div>
-
             </div>
+
             <h3 class="titulo-categorias">Clique para cadastrar o que há na sua:</h3>
 
             <div class="section-home-container-tipo-item">
-
                 <img src="../../resources/img/itens geladeira/geladeira.png" alt="Geladeira aberta" class="tipo-item-img-geladeira">
                 <h2 class="tipo-item-title">Geladeira</h2>
-
             </div>
 
             <div class="section-home-container-cadastro">
@@ -54,8 +50,7 @@ pageEncoding="UTF-8"%>
                     <h3>FRUTAS, LEGUMES E VERDURAS</h3>
                 </div>
                 <div class="section-home-container-cadastro-content" id="section-home-container-cadastro-content">
-                    
-
+            
                     <span class="span-novo-item">
                         <input class="input-novo-item" type="text">
                         <div class="input-novo-item-btn">
