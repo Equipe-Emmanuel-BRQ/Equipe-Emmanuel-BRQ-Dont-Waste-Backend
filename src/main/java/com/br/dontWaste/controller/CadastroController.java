@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.br.dontWaste.model.AlimentosModel;
 import com.br.dontWaste.service.SistemaApi;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Controller
 public class CadastroController {
@@ -27,5 +28,13 @@ public class CadastroController {
 		System.out.println("back");
 		List<AlimentosModel> alimentosModel = sistemaApi.buscarAlimentos();
 		return alimentosModel;
+	}
+	
+	@RequestMapping("/cadastrarAlimentos")
+	@ResponseBody
+	public void cadastrarAlimentos(String enviarAlimento) throws Exception{
+		ObjectMapper mapper = new ObjectMapper();
+		AlimentosModel alimento = mapper.readValue(enviarAlimento, AlimentosModel.class);
+		sistemaApi.cadastrarAlimentos(alimento);
 	}
 }

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.http.client.fluent.Request;
+import org.apache.http.client.fluent.Response;
 import org.springframework.stereotype.Service;
 
 import com.br.dontWaste.model.AlimentosModel;
@@ -35,6 +36,12 @@ public class SistemaApi {
 		List<AlimentosModel> listaAlimentos = Arrays.asList(mapper.readValue(returnCall, AlimentosModel[].class)); 
 		
 		return listaAlimentos;
+	}
+	
+	public Response cadastrarAlimentos(AlimentosModel alimentos) throws Exception{
+		Response returnCall = Request.Post("http://localhost:3002/alimentos/" + alimentos)
+				.execute();
+		return returnCall;
 	}
 	
 }
