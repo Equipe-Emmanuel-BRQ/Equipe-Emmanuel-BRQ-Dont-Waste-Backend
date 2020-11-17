@@ -50,14 +50,17 @@ pageEncoding="UTF-8"%>
                     <h3>FRUTAS, LEGUMES E VERDURAS</h3>
                 </div>
                 <div class="section-home-container-cadastro-content" id="section-home-container-cadastro-content">
-            
+                    <form action="cadastrarAlimentos" method="POST" id="form-cadastro-alimento">
+                    <input type="hidden" name="enviarAlimento" id="enviarAlimento">
                     <span class="span-novo-item">
                         <input class="input-novo-item" type="text">
                         <div class="input-novo-item-btn">
-                            <button><img class="img-button-icon" src="../../resources/img/cancel-mark.svg" alt=""></button>
-                            <button><img class="img-button-icon" src="../../resources/img/check.svg" alt=""></button>
+                            <button class="button-cancela-cadastro"><img class="img-button-icon" src="../../resources/img/cancel-mark.svg" alt=""></button>
+                            <button type="submit" class="button-cadastra-item"><img class="img-button-icon" src="../../resources/img/check.svg" alt=""></button>
                         </div>
                     </span>
+                    
+                    </form>
 
                     <button type="button" class="button-novo-item">NOVO ITEM +</button>
 
