@@ -66,8 +66,8 @@ pageEncoding="UTF-8"%>
 
                 </div>
                 <div class="section-home-container-cadastro-button">
-                    <a href="/homeLogada" class="button-voltar btn-cadastro">Voltar</a>
-                    <a href="/homeLogada" class="button-voltar btn-cadastro">Alimentos cadastrados</a>
+                    <a href="itensGeladeira" class="button-voltar btn-cadastro">Voltar</a>
+                    <a href="categorias" class="button-voltar btn-cadastro">Alimentos cadastrados</a>
                 </div>
             </div>
         </div>

@@ -16,12 +16,10 @@
 			success: function(data) {
 				if(data == true) {
 					$(".container-login").hide();
-					alert("Redirecionando pagina...")
+					window.location.replace("homeLogada")
 				}else {
 					$(".container-login").show();
 				}
-				
-
 			}
 		})
 	}

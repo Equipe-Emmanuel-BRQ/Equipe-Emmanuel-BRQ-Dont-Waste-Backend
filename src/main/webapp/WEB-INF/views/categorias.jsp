@@ -41,7 +41,7 @@ pageEncoding="UTF-8"%>
             <h3 class="titulo-categorias">Clique para cadastrar o que há na sua:</h3>
 
             <div class="section-home-container-categorias">
-               <a href="" class="categoria-card">
+               <a href="itensGeladeira" class="categoria-card">
                     <h2 class="categoria-card-titulo">Geladeira</h2>
                     <img class="card-img-geladeira" src="../../resources/img/Geladeira.png" alt="">
                </a>

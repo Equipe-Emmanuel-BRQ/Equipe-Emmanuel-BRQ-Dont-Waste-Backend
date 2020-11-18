@@ -66,7 +66,7 @@ pageEncoding="UTF-8"%>
 
           <div class="ancor-option">
             <a href="/cadastroLogin" class="form-btn btn-voltar">Voltar</a>
-            <a href="#" class="form-btn btn-salvar">Salvar</a>
+            <a href="login" class="form-btn btn-salvar">Salvar</a>
           </div>
 
         </div>

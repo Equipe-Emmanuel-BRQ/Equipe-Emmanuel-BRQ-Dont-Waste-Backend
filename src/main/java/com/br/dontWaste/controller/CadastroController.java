@@ -25,7 +25,6 @@ public class CadastroController {
 	@RequestMapping("/buscarAlimentos")
 	@ResponseBody
 	public List<AlimentosModel> buscarAlimentos() throws Exception{
-		System.out.println("back");
 		List<AlimentosModel> alimentosModel = sistemaApi.buscarAlimentos();
 		return alimentosModel;
 	}

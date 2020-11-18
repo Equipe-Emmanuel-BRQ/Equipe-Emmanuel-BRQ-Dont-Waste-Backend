@@ -48,7 +48,7 @@ pageEncoding="UTF-8"%>
             </div>
 
             <div class="section-home-container-categorias">
-                <a href="" class="categoria-card">
+                <a href="cadastroGeladeiraFrutas" class="categoria-card">
                     <img class="card-img" src="../../resources/img/itens geladeira/Frutas.png" alt="Frutas">
                     <h2 class="categoria-card-titulo">Frutas, leg e verduras</h2>
                 </a>
