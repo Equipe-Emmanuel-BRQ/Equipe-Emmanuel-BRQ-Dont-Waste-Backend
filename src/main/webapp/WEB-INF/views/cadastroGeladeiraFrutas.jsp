@@ -39,7 +39,8 @@ pageEncoding="UTF-8"%>
             <h3 class="titulo-categorias">Clique para cadastrar o que há na sua:</h3>
 
             <div class="section-home-container-tipo-item">
-                <img src="../../resources/img/itens geladeira/geladeira.png" alt="Geladeira aberta" class="tipo-item-img-geladeira">
+                <img src="../../resources/img/itens geladeira/geladeira.png" alt="Geladeira aberta"
+                    class="tipo-item-img-geladeira">
                 <h2 class="tipo-item-title">Geladeira</h2>
             </div>
 
@@ -51,15 +52,17 @@ pageEncoding="UTF-8"%>
                 </div>
                 <div class="section-home-container-cadastro-content" id="section-home-container-cadastro-content">
                     <form action="cadastrar" method="POST" id="form-cadastro-alimento">
-                    <input type="hidden" name="enviarAlimento" id="enviarAlimento">
-                    <span class="span-novo-item">
-                        <input class="input-novo-item" type="text">
-                        <div class="input-novo-item-btn">
-                            <button type="button" class="button-cancela-cadastro"><img class="img-button-icon" src="../../resources/img/cancel-mark.svg" alt=""></button>
-                            <button type="submit" class="button-cadastra-item"><img class="img-button-icon" src="../../resources/img/check.svg" alt=""></button>
-                        </div>
-                    </span>
-                    
+                        <input type="hidden" name="enviarAlimento" id="enviarAlimento">
+                        <span class="span-novo-item">
+                            <input class="input-novo-item" type="text">
+                            <div class="input-novo-item-btn">
+                                <button type="button" class="button-cancela-cadastro"><img class="img-button-icon"
+                                        src="../../resources/img/cancel-mark.svg" alt=""></button>
+                                <button type="submit" class="button-cadastra-item"><img class="img-button-icon"
+                                        src="../../resources/img/check.svg" alt=""></button>
+                            </div>
+                        </span>
+
                     </form>
 
                     <button type="button" class="button-novo-item">NOVO ITEM +</button>

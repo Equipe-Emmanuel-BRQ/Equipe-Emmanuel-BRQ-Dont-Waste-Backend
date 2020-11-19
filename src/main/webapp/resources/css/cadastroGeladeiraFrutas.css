@@ -199,11 +199,17 @@
 }
 
 .span-novo-item{
-    width: 70%;
+    width: 100%;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     margin: 0;
     order: 0;
+}
+
+#form-cadastro-alimento{
+    width: 50%;
+    height: auto;
 }
 
 .img-button-icon{
@@ -212,7 +218,7 @@
 }
 
 .input-novo-item-btn{
-    width: 60%;
+    width: 4rem
 }
 
 .span-novo-item button{
@@ -222,6 +228,7 @@
 
 .input-novo-item{
     width: 7rem;
+    height: 1.5rem;
 }
 
 .button-novo-item{
