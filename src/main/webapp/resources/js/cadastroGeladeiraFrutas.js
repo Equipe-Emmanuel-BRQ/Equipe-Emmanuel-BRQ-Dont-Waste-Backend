@@ -6,7 +6,7 @@ $(document).ready(function(){
         success: function (data) {
             let geradorId = 0;
             for (const item of data) {
-                if (((item.tipoalimento == "fruta") || (item.tipoalimento == "legume") || (item.tipoalimento == "verdura")) && (item.tipoitem == "geladeira")) {
+                if ((item.tipoalimento == "fvl") && (item.tipoitem == "geladeira")) {
                     let template = `
                     <div class='section-home-container-cadastro-interno'>
                         <label for='input-number'>${item.nome}</label>
@@ -47,7 +47,10 @@ $(".button-novo-item").click(function () {
 $(".button-cadastra-item").click(function() {
     alimentoToJson()
     $("#form-cadastro-alimento").submit();   
-    
+})
+
+$(".button-cancela-cadastro").click(function(){
+    $(".span-novo-item").hide();
 })
 
 function alimentoToJson(){
@@ -58,7 +61,7 @@ function alimentoToJson(){
     alimento["quantidade"] = 0;
     alimento["datacompra"] = "17112020";
     alimento["tipoalimento"] = "fvl";
-    alimento["tipoitem"] = "Geladeira";
+    alimento["tipoitem"] = "geladeira";
 
     $("#enviarAlimento").val(JSON.stringify(alimento))
     console.log($("#enviarAlimento").val());

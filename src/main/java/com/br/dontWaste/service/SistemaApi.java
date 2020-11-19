@@ -3,6 +3,12 @@ package com.br.dontWaste.service;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
 import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Response;
 import org.springframework.stereotype.Service;
@@ -38,10 +44,19 @@ public class SistemaApi {
 		return listaAlimentos;
 	}
 	
-	public Response cadastrarAlimentos(AlimentosModel alimentos) throws Exception{
+	public Response cadastraarAlimentos(AlimentosModel alimentos) throws Exception{
 		Response returnCall = Request.Post("http://localhost:3002/alimentos/" + alimentos)
 				.execute();
 		return returnCall;
+	}
+	
+	public AlimentosModel cadastrarAlimentos(AlimentosModel alimentos) throws Exception {
+		Client client = ClientBuilder.newClient();
+		WebTarget myResource = client.target("http://localhost:3002/alimentos/");
+		AlimentosModel alimentosModel = myResource.request(MediaType.APPLICATION_JSON)
+				.post(Entity.json(alimentos), AlimentosModel.class);
+		
+		return alimentosModel;
 	}
 	
 }

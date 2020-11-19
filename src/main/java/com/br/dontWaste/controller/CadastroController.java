@@ -29,11 +29,12 @@ public class CadastroController {
 		return alimentosModel;
 	}
 	
-	@RequestMapping("/cadastrarAlimentos")
-	@ResponseBody
-	public void cadastrarAlimentos(String enviarAlimento) throws Exception{
+	@RequestMapping("/cadastrar")
+	public String cadastrarAlimentos(String enviarAlimento) throws Exception{
 		ObjectMapper mapper = new ObjectMapper();
 		AlimentosModel alimento = mapper.readValue(enviarAlimento, AlimentosModel.class);
 		sistemaApi.cadastrarAlimentos(alimento);
+		System.out.println("ok");
+		return "cadastroGeladeiraFrutas";
 	}
 }

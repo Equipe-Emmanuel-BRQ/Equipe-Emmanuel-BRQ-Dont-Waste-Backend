@@ -156,6 +156,7 @@
 
 .section-home-container-cadastro-interno{
     width: 50%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,7 +199,7 @@
 }
 
 .span-novo-item{
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -211,8 +212,7 @@
 }
 
 .input-novo-item-btn{
-    width: 40%;
-    order: 1;
+    width: 60%;
 }
 
 .span-novo-item button{
