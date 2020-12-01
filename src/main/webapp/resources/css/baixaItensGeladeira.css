@@ -1,0 +1,437 @@
+.navbar-home-logada {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.navbar-home-logada-container {
+    display: flex;
+    width: 90%;
+    height: 12vh;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon, .home-icon-logado {
+    height: 2.5rem;
+    margin: 0;
+}
+
+.form-navbar, .form-input-navbar {
+    padding: 0;
+    margin: 0;
+}
+
+.form-input-navbar {
+    width: 40vw;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: .1rem solid grey;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 .5rem;
+    background-image: url(../img/lupa.svg);
+    background-repeat: no-repeat;
+    background-size: 4.5%;
+    background-position: 97% center;
+}
+
+.section-home {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-home-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-home-container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-home {
+    width: 15%;
+    height: 15%;
+}
+
+.section-home-container-titles {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.home-title {
+    font-size: 35px;
+    font-weight: bolder;
+    margin: .5rem 0;
+}
+
+.home-subtitle {
+    font-size: 25px;
+    margin: .5rem 0;
+    font-weight: lighter;
+}
+
+.titulo-categorias {
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.section-home-container-tipo-item {
+    box-sizing: border-box;
+    width: 50%;
+    height: 6rem;
+    padding: 1rem;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #d1cdcd;
+    background-color: #eeeae9;
+}
+
+.tipo-item-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+.tipo-item-img-geladeira {
+    width: 30%;
+    height: 4.5rem;
+}
+
+.section-home-container-cadastro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.section-home-container-cadastro-titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5FBAA7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.section-home-container-cadastro-content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    height:15rem;
+    overflow: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.section-home-container-cadastro-interno{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    order: -1;
+}
+
+.div-input-interno-tbl-quantidade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-number{
+    width: 3rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    border: 0.5px solid black;
+}
+
+.menos, .mais{
+    border: none;
+    font-size: 1rem;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.menos{
+    margin-left: 0.2rem;
+    color: red;
+    font-size: 1rem;
+}
+
+.mais{
+    color: green;
+}
+
+.span-novo-item{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    order: 0;
+}
+
+#form-cadastro-alimento{
+    width: 50%;
+    height: auto;
+}
+
+.img-button-icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-novo-item-btn{
+    width: 4rem
+}
+
+.span-novo-item button{
+    background-color: inherit;
+    border: inherit;
+}
+
+.input-novo-item{
+    width: 7rem;
+    height: 1.5rem;
+}
+
+.button-novo-item{
+    margin-top: 1rem;
+}
+
+.section-home-container-cadastro-button{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+.btn-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    background-color: #5FBAA7;
+    color: white;
+    font-size: 1rem;
+    border-radius: .3rem;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+/* estilização da tabela*/
+
+.tabela-produtos{
+    background-color: violet;
+    width: 90%;
+    margin: 1rem;
+    border-collapse: collapse;
+}
+
+.tabela-produtos-cabecalho{
+    background-color: #808080;
+   
+}
+.tabela-produtos-col-head{
+    color: white;
+    font-weight: normal;
+    height: 2rem;
+}
+
+.tabela-produtos-corpo-col{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #d1cdcd;
+    padding: .2rem 0;
+}
+
+.tbl-qantidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.tbl-desperdicio{
+    /* background-color: burlywood; */
+}
+
+.tbl-consumo{
+    background-color: chartreuse;
+}
+
+.input-desperdicio{
+    appearance: none;
+    background-color: #5FBAA7;
+    width: 7rem;
+    height: 1.3rem;
+    border-radius: .3rem;
+    margin: .3rem;
+}
+
+
+
+@media only screen and (min-width: 361px) and (max-width: 910px) {
+    html, body, .section-home {
+        height: auto;
+    }
+    body {
+        background-image: url(../img/FundoMobile.jpg);
+    }
+    body::before {
+        height: 0;
+    }
+    
+    .section-home-container {
+        width: 100%;
+        height: 100%;
+    }
+    .logo-home {
+        width:  20%;
+        height: 100%;
+    }
+    .section-home-container-content {
+        margin-top: 5%;
+        flex-direction: row;
+    }
+    .home-slogan {
+        width: 80%;
+        word-break: break-word;
+        text-align: center;
+    }
+    .titulo-categorias {
+        margin: 1.5rem
+    }
+    
+    .section-home-container-tipo-item {
+        width: 70%;
+    }
+    .tipo-item-title {
+        font-size: 1.5rem;
+    }
+
+    .section-home-container-cadastro-button{
+        width: 100%;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+    html, body, .section-home {
+        height: auto;
+    }
+    body {
+        background-image: url(../img/FundoMobile.jpg);
+    }
+    body::before {
+        height: 0;
+    }
+    .navbar-home-logada-container {
+        background-color: inherit;
+        height: initial;
+    }
+    .navbar-home-logada-container {
+        height: 10%;
+    }
+    .menu-icon, .home-icon-logado {
+        height: 1.8rem;
+        margin: 0;
+    }
+    .form-input-navbar {
+        width: 55vw;
+        height: 5.5vh;
+        background: none;
+        font-size: .9rem;
+        text-align: center;
+    }
+    .section-home-container {
+        width: 100%;
+        height: 100%;
+    }
+    .logo-home {
+        width: 20%;
+        height: auto;
+    }
+    .home-title {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .home-subtitle {
+        font-size: 1.1rem;
+    }
+    .home-slogan {
+        width: 80%;
+        font-size: 35px;
+        word-break: break-word;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+    .titulo-categorias {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    .section-home-container-tipo-item {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .section-home {
+        margin: 3% auto;
+    }
+    .tipo-item-title {
+        font-size: 1.2rem;
+        margin-left: 2%;
+    }
+
+    .section-home-container-titles {
+        text-align: center;
+        width: 80%;
+        height: 30%;
+    }
+    .section-home-container-content {
+        flex-direction: column;
+    }
+
+    .section-home-container-cadastro-button{
+        width: 100%;
+    }
+}
