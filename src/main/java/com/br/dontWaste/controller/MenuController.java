@@ -15,4 +15,9 @@ public class MenuController {
 	public String itensGeladeira() {
 		return "itensGeladeira";
 	}	
+	
+	@RequestMapping("/baixaItensGeladeira")
+	public String baixaItensGeladeira() {
+		return "baixaItensGeladeira";
+	}
 }
