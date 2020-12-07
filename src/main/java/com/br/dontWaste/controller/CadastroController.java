@@ -16,25 +16,30 @@ public class CadastroController {
 
 	@Autowired
 	private SistemaApi sistemaApi;
-	
+
 	@RequestMapping("/cadastroGeladeiraFrutas")
 	public String cadastroGeladeiraFrutas() {
 		return "cadastroGeladeiraFrutas";
 	}
-	
+
 	@RequestMapping("/buscarAlimentos")
 	@ResponseBody
-	public List<AlimentosModel> buscarAlimentos() throws Exception{
+	public List<AlimentosModel> buscarAlimentos() throws Exception {
 		List<AlimentosModel> alimentosModel = sistemaApi.buscarAlimentos();
 		return alimentosModel;
 	}
-	
+
 	@RequestMapping("/cadastrar")
-	public String cadastrarAlimentos(String enviarAlimento) throws Exception{
+	public String cadastrarAlimentos(String enviarAlimento) throws Exception {
 		ObjectMapper mapper = new ObjectMapper();
 		AlimentosModel alimento = mapper.readValue(enviarAlimento, AlimentosModel.class);
 		sistemaApi.cadastrarAlimentos(alimento);
-		System.out.println("ok");
 		return "cadastroGeladeiraFrutas";
+	}
+
+	@RequestMapping("/atualizarQuantidade")
+	@ResponseBody
+	public void atualizarQuantidade(int idProduto, int quantidade) throws Exception {
+		sistemaApi.atualizarQuantidade(idProduto, quantidade);
 	}
 }

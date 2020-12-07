@@ -147,10 +147,9 @@
     align-items: center;
     justify-content: space-around;
     border: 1px solid lightgrey;
-    height:15rem;
+    max-height:15rem;
+    height: auto;
     overflow: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     
 }
 
@@ -225,7 +224,7 @@
 }
 
 .button-novo-item{
-    margin-top: 1rem;
+    margin: 1rem auto;
 }
 
 .section-home-container-cadastro-button{
