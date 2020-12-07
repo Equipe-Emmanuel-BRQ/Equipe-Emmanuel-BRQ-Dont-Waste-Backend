@@ -6,9 +6,10 @@ function montarLinhasTabela(produto) {
 		        <td class="tabela-produtos-corpo-col tbl-item">${produto.nome}</td>
 		        <td class="tabela-produtos-corpo-col tbl-data">${produto.datacompra}</td>
 		        <td class="tabela-produtos-corpo-col tbl-qantidade">
+					<input type="hidden" id="produto-id" value="${produto.id}" />
 		            <div class='div-input-interno-tbl-quantidade'>
 		                <button class='menos' onclick="subtrair(this)">-</button>
-		                <input readonly value='0' class='input-number'  type='text'>
+		                <input readonly value='${produto.quantidade}' class='input-number'  type='text'>
 		                <button class='mais'  onclick="somar(this)">+</button>
 		            </div>
 		        </td>
@@ -23,15 +24,39 @@ function montarLinhasTabela(produto) {
 
 function somar(element) {
 	let valor = parseInt($(element).parent().find('input').val());
+	let quantidade = $(element).parent().find('input').val(valor + 1);
+	let idProduto = $(element).parent().parent().find('#produto-id').val();
 	$(element).parent().find('input').val(valor + 1);
+
+	atualizaQuantidade(idProduto, quantidade.val());
 }
 
 function subtrair(element) {
+	let quantidade;
 	let valor = parseInt($(element).parent().find('input').val());
+	let idProduto = $(element).parent().parent().find('#produto-id').val();
+
 	if (valor > 0) {
 		$(element).parent().find('input').val(valor - 1);
+		quantidade = $(element).parent().find('input').val(valor - 1);
+		atualizaQuantidade(idProduto, quantidade.val());
 	}
 }
+
+function atualizaQuantidade(idProduto, quantidade) {
+
+	$.ajax({
+		url: "atualizarQuantidade",
+		type: "PUT",
+		data: {
+			idProduto: idProduto,
+			quantidade: quantidade
+		},
+		success: function() {
+		}
+	})
+}
+
 
 function carregarDadosNaTabela() {
 	$.ajax({
