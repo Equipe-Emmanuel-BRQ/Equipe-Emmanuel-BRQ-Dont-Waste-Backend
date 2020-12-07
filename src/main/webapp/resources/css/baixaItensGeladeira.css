@@ -240,6 +240,11 @@
 	margin-bottom: 2rem;
 }
 
+.section-home-container-cadastro-titulo h3 {
+	font-size: 1rem;
+	color: #fff;
+}
+
 .btn-cadastro {
 	display: flex;
 	align-items: center;
@@ -269,19 +274,19 @@
 }
 
 .tabela-produtos td {
-  padding: 8px;
-  text-align: center;
+	padding: 8px;
+	text-align: center;
 }
 
 .tabela-produtos-col-head:last-child {
-  border-right: 1px solid #c4c4c4;
-  padding: 8px;
+	border-right: 1px solid #c4c4c4;
+	padding: 8px;
 }
+
 .tabela-produtos-linha {
 	background-color: #888;
 	color: #fff;
 }
-
 
 .tbl-qantidade {
 	display: flex;
@@ -314,7 +319,6 @@ input[type=range]::-webkit-slider-thumb {
 	margin-top: -2.5px;
 }
 
-
 .input-desperdicio {
 	appearance: none;
 	background-color: #5FBAA7;
@@ -324,7 +328,7 @@ input[type=range]::-webkit-slider-thumb {
 	margin: .3rem;
 }
 
-@media only screen and (min-width: 361px) and (max-width: 910px) {
+@media only screen and (min-width: 535px) and (max-width: 910px) {
 	html, body, .section-home {
 		height: auto;
 	}
@@ -365,7 +369,7 @@ input[type=range]::-webkit-slider-thumb {
 	}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 360px) {
+@media only screen and (min-width: 0px) and (max-width: 535px) {
 	html, body, .section-home {
 		height: auto;
 	}
@@ -441,4 +445,19 @@ input[type=range]::-webkit-slider-thumb {
 	.section-home-container-cadastro-button {
 		width: 100%;
 	}
+	.section-home-container-cadastro-titulo h3{
+		font-size: 1rem;
+	}
+	.section-home-container-cadastro {
+		width: 90%;
+		margin: 0 auto;
+		overflow: auto;	
+		align-items: unset;
+	}
+	.tabela-produtos-col-head {
+		font-size: .9rem;	
+	}
+	.btn-cadastro  {
+		width: 7rem;
+		height: 2rem;}
 }
