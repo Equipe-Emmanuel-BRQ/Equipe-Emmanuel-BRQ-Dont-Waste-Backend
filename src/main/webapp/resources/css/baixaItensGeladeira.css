@@ -261,11 +261,14 @@
 	width: 90%;
 	margin: 1rem;
 	border-collapse: collapse;
+	border: 1px solid #c4c4c4;
 }
 
+.tabela-produtos-corpo-linha {
+	border: 1px solid #c4c4c4;
+}
 
 .tabela-produtos td {
-  border: 1px solid #c4c4c4;
   padding: 8px;
   text-align: center;
 }

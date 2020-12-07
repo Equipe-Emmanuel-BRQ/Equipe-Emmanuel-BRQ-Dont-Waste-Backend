@@ -50,7 +50,6 @@ pageEncoding="UTF-8"%>
                 <div class="section-home-container-cadastro-titulo">
                     <h3>ALIMENTOS CADASTRADOS</h3>
                 </div>
-                <!-- <div class="section-home-container-cadastro-content" id="section-home-container-cadastro-content"> -->
                     <table class="tabela-produtos">
                         <thead class="tabela-produtos-cabecalho">
                             <tr class="tabela-produtos-linha">
@@ -62,11 +61,10 @@ pageEncoding="UTF-8"%>
                             </tr>
                         </thead>
                         <tbody class="tabela-produtos-corpo">
-
+                        
                         </tbody>
                     </table>
 
-                <!-- </div> -->
                 <div class="section-home-container-cadastro-button">
                     <a href="itensGeladeira" class="button-voltar btn-cadastro">Voltar</a>
                     <a href="categorias" class="button-voltar btn-cadastro">Salvar</a>
