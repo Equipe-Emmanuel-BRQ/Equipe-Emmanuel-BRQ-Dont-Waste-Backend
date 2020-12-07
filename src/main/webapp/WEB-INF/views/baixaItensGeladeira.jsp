@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+
 <html lang="PT-BR">
 
 <head>
@@ -16,7 +19,7 @@
             <div class="navbar-home-logada-container">
                 <a href="homeLogada"><img class="home-icon-logado" alt="" src="../../resources/img/home.svg"></a>
                 <form class="form-navbar" action="">
-                    <input type="text" class="form-input-navbar" placeholder="O que você procura?">
+                    <input type="text" class="form-input-navbar" placeholder="O que vocÃª procura?">
                 </form>
                 <img class="menu-icon" alt="" src="../../resources/img/menu.svg">
             </div>
@@ -59,23 +62,7 @@
                             </tr>
                         </thead>
                         <tbody class="tabela-produtos-corpo">
-                            <tr class="tabela-produtos-corpo-linha">
-                                <td class="tabela-produtos-corpo-col tbl-item">Manga</td>
-                                <td class="tabela-produtos-corpo-col tbl-data">10/07</td>
-                                <td class="tabela-produtos-corpo-col tbl-qantidade">
-                                    <div class='div-input-interno-tbl-quantidade'>
-                                        <button class='menos'>-</button>
-                                        <input  readonly value='0' class='input-number' type='text'>
-                                        <button class='mais'>+</button>
-                                    </div>
-                                </td>
-                                <td class="tabela-produtos-corpo-col tbl-desperdicio" colspan="3">
-                                    <div class="slidecontainer">
-                                        <input class="input-desperdicio" type="range" min="1" max="3">
-                                      </div>
-                                </td>
-                                <td class="tabela-produtos-corpo-col tbl-consumo"></td>
-                            </tr>
+
                         </tbody>
                     </table>
 
